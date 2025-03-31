@@ -15,7 +15,7 @@ function App() {
     try {
       setLoading(true);
       // Thay đổi URL này thành API endpoint thực tế của bạn
-      const response = await axios.get('http://127.0.0.1:8000/api/memory-usage');
+      const response = await axios.get('https://memory-checking.onrender.com/api/memory-usage');
       setMemoryData(response.data);
       setLastUpdated(new Date());
       setError(null);
